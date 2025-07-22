@@ -1,20 +1,24 @@
-# Ignore Python bytecode and cache
+# Python bytecode and cache
 __pycache__/
 *.pyc
 
-# Ignore log files
+# Log files
 *.log
 
-# Ignore backup and export files
+# Backup and export files
 data/blockchain_backup*.json
 data/blockchain_export*.csv
 
-# Ignore keys folder and private keys (important!)
+# Blockchain data file (optional, exclude if you want)
+data/blockchain.json
+
+# Keys and private keys (DO NOT upload these!)
 keys/
-private_key.pem
-public_key.pem
 gov_private.pem
 gov_public.pem
+private_key.pem
+public_key.pem
 
-# Optionally ignore live blockchain data file (if you don't want it in repo)
-data/blockchain.json
+# OS files (optional)
+.DS_Store
+Thumbs.db
